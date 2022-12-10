@@ -20,7 +20,10 @@ public class PickupDropObjects : MonoBehaviour
             if (heldObj == null)
             {
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
+                Vector3 cameraOrigin = GetComponent<Transform>().position;
+                Vector3 direction = (holdArea.position - cameraOrigin);
+
+                if (Physics.Raycast(cameraOrigin, direction, out hit, pickupRange))
                 {
                     PickupObject(hit.transform.gameObject);
                 }
