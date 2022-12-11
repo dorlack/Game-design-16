@@ -15,7 +15,7 @@ C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-65197
+62469
 Successfully changed project path to: C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
 C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 62.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,39 +63,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006612 seconds.
+Registered in 0.006499 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 62.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 69.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.569 seconds
+- Completed reload, in  0.573 seconds
 Domain Reload Profiling:
-	ReloadAssembly (571ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (574ms)
+		BeginReloadAssembly (61ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (406ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (414ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (94ms)
+			SetupTypeCache (96ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (238ms)
+			SetupLoadedEditorAssemblies (247ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (62ms)
+				RefreshPlugins (69ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadAttributes (128ms)
 				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -103,52 +103,52 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005226 seconds.
+Registered in 0.004873 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\petar\Unity\Game-design-16\Game_Design_group_16\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\petar\Unity\Game-design-16\Game_Design_group_16\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.994 seconds
+- Completed reload, in  0.917 seconds
 Domain Reload Profiling:
-	ReloadAssembly (995ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (918ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (782ms)
-			LoadAssemblies (75ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (718ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (263ms)
+			SetupTypeCache (236ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (351ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (229ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (55.3 KB). Loaded Objects now: 3843.
-Memory consumption went from 116.7 MB to 116.7 MB.
-Total: 3.504500 ms (FindLiveObjects: 0.283400 ms CreateObjectMapping: 0.246900 ms MarkObjects: 2.901800 ms  DeleteObjects: 0.071700 ms)
+Unloading 3515 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (1.3 MB). Loaded Objects now: 3985.
+Memory consumption went from 149.6 MB to 148.4 MB.
+Total: 3.013800 ms (FindLiveObjects: 0.270700 ms CreateObjectMapping: 0.359600 ms MarkObjects: 2.186000 ms  DeleteObjects: 0.196600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,29 +162,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 280634.629691 seconds.
-  path: Assets/Props/extras/cafe
-  artifactKey: Guid(764341f6fbe2bfd4497887b06466cffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/extras/cafe using Guid(764341f6fbe2bfd4497887b06466cffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124d847ccb3fbfe8d002cfc261f04082') in 0.010066 seconds 
+  Time since last request: 352762.854595 seconds.
+  path: Assets/Props/extras/cafe/books/uploads_files_3379977_posters.fbx
+  artifactKey: Guid(3c05712c42e6bfb4094ae5940209d6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/uploads_files_3379977_posters.fbx using Guid(3c05712c42e6bfb4094ae5940209d6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725da0131cbd9e2d27720442a14c95f6') in 0.150512 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 165.228217 seconds.
-  path: Assets/Props/extras/cafe/textures/2.jpg
-  artifactKey: Guid(a31282035be332347910c342eab1ba90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/extras/cafe/textures/2.jpg using Guid(a31282035be332347910c342eab1ba90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97fac4410213ef05bf76928d51869dcd') in 0.079862 seconds 
+  Time since last request: 97.780288 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/book3_Base_Color.png
+  artifactKey: Guid(b7e2d237bc3bdaf4892d2393791173f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/book3_Base_Color.png using Guid(b7e2d237bc3bdaf4892d2393791173f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1c64537a17316a1857c0543559a861') in 0.039302 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Props/extras/cafe/textures/diffuse patch 2.jpg
-  artifactKey: Guid(f353d2add71444441809c27aadb82122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/extras/cafe/textures/diffuse patch 2.jpg using Guid(f353d2add71444441809c27aadb82122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c83db2c7fc7af1268825aa633d9f1ff') in 0.018385 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/book4_Base_Color.png
+  artifactKey: Guid(4e21ce8bb186bab4bb3b424690c4525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/book4_Base_Color.png using Guid(4e21ce8bb186bab4bb3b424690c4525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c569be7ef02f5d2b05af319ba56b68') in 0.011632 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Props/extras/cafe/textures/5.jpg
-  artifactKey: Guid(9d02922f9cf929240bb2c63d65ac9002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/extras/cafe/textures/5.jpg using Guid(9d02922f9cf929240bb2c63d65ac9002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451096c0dce4592194e0d7de72e721fb') in 0.016363 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 0.000017 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/book_Base_Color.png
+  artifactKey: Guid(949fcb37d8aae634a94c876987e88368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/book_Base_Color.png using Guid(949fcb37d8aae634a94c876987e88368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226d38f0e967155c9223c334911d0116') in 0.014874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/book_Roughness.png
+  artifactKey: Guid(85c56757e5a6dcc4e97c0816437b3895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/book_Roughness.png using Guid(85c56757e5a6dcc4e97c0816437b3895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f9b8c56b6974437b7b8ee8f3e504e0') in 0.013246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/book_Normal_OpenGL.png
+  artifactKey: Guid(a2adbdd48a321e84a84fc80b18b4e4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/book_Normal_OpenGL.png using Guid(a2adbdd48a321e84a84fc80b18b4e4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c438df2de548c8196294144f287bd4e6') in 0.023597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.426536 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/Materials/book3_Base_Color.mat
+  artifactKey: Guid(b5e139203a00322469f38b7565a62747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/Materials/book3_Base_Color.mat using Guid(b5e139203a00322469f38b7565a62747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05d7377accdb6908fc0f4cf79bb99d0') in 0.015463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/Materials/book_Base_Color.mat
+  artifactKey: Guid(e64b91637c5dd0946892ec808f7100de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/Materials/book_Base_Color.mat using Guid(e64b91637c5dd0946892ec808f7100de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b4576f92826dd6dc28baad4a375f28') in 0.013711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Props/extras/cafe/books/book_textures/Materials/book4_Base_Color.mat
+  artifactKey: Guid(0f9519fd6f184ae41a438b8501c9a4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/cafe/books/book_textures/Materials/book4_Base_Color.mat using Guid(0f9519fd6f184ae41a438b8501c9a4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c690b1e3d9aeb7c2283c5500c8559a15') in 0.074202 seconds 
