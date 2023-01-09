@@ -7,6 +7,7 @@ public class CameraSwitch : MonoBehaviour
     public Transform PlayerCamera;
     public GameObject player_cam;
     public GameObject zoom1;
+    public GameObject player;
     public float MaxDistance = 10;
     private Animator anim;
 
@@ -35,6 +36,7 @@ public class CameraSwitch : MonoBehaviour
             // if raycast hits, then it checks if it hit an object with the tag Door.
             if (screenhit.transform.tag == "Screen")
             {
+                player.GetComponent<PlayerMovement>().enabled = false;
                 zoom1.SetActive(true);
                 player_cam.SetActive(false);
                 //This line will get the Animator from  Parent of the door that was hit by the raycast.
@@ -53,6 +55,7 @@ public class CameraSwitch : MonoBehaviour
             if (screenhit.transform.tag == "Screen")
             {
                 zoom1.GetComponent<Animator>().Play("Screen out");
+                player.GetComponent<PlayerMovement>().enabled = true;
             }
         }
     }

@@ -6,6 +6,7 @@ public class EndAimationObserver : MonoBehaviour
 {
     public GameObject player_cam;
     public GameObject zoom1;
+    public GameObject Panel;
     
     public void AlertObservers(string message)
     {
@@ -13,6 +14,10 @@ public class EndAimationObserver : MonoBehaviour
         {
             player_cam.SetActive(true);
             zoom1.SetActive(false);
+        }
+        if (message.Equals("Screen zoom animation ended"))
+        {
+                Panel.gameObject.SetActive(true);
         }
     }
 }
