@@ -20,7 +20,7 @@ public class DoorScript : MonoBehaviour
         {
             Pressed();
             //Delete if you dont want Text in the Console saying that You Press F.
-            Debug.Log("You Press F");
+            //Debug.Log("You Press F");
         }
     }
  
@@ -40,10 +40,10 @@ public class DoorScript : MonoBehaviour
                 Debug.Log(anim);
  
                 //This will set the bool the opposite of what it is.
-                opened = !opened;
+                //opened = !opened;
  
                 //This line will set the bool true so it will play the animation.
-                anim.SetBool("Opened", !opened);
+                anim.SetBool("Opened", !anim.GetBool("Opened"));
             }
         }
     }
