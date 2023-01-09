@@ -6,7 +6,7 @@ public class DoorScript : MonoBehaviour
 {
     public Transform PlayerCamera;
     [Header("MaxDistance you can open or close the door.")]
-    public float MaxDistance = 5;
+    public float MaxDistance = 10;
  
     private bool opened = false;
     private  Animator anim;
@@ -31,7 +31,6 @@ public class DoorScript : MonoBehaviour
  
         if (Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out doorhit, MaxDistance))
         {
- 
             // if raycast hits, then it checks if it hit an object with the tag Door.
             if (doorhit.transform.tag == "Door")
             {
