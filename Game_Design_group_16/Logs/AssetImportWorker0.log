@@ -202,3 +202,43 @@ Received Import Request.
   path: Assets/Orange.mat
   artifactKey: Guid(94b0f76f094a1cc4d92d1ab4f99f4d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Orange.mat using Guid(94b0f76f094a1cc4d92d1ab4f99f4d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15b43cfb33311d4f63b436979746242e') in 0.028050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 847.872927 seconds.
+  path: Assets/Props/extras/Programming/Lemon Milk Demo 1.png
+  artifactKey: Guid(7e5125068f9bd6443bdeb5ec02ae2d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Lemon Milk Demo 1.png using Guid(7e5125068f9bd6443bdeb5ec02ae2d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965cd84d3a9f2ee6d6e4866fb2a1d0ce') in 0.062285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-Regular.otf
+  artifactKey: Guid(8f458c425ca9e05459fafaa1e5a309d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-Regular.otf using Guid(8f458c425ca9e05459fafaa1e5a309d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d927915ea84d9c8377993c20f39e7e0') in 0.061054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-RegularItalic.otf
+  artifactKey: Guid(731b27a00d7de0c4d8bfce69e9e51ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-RegularItalic.otf using Guid(731b27a00d7de0c4d8bfce69e9e51ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091e26fb1cf17b87e12d6272646b8a1a') in 0.056899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-BoldItalic.otf
+  artifactKey: Guid(1bce1329a9c9a8a4abf736b5c2a69bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-BoldItalic.otf using Guid(1bce1329a9c9a8a4abf736b5c2a69bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f703ffa2bcc1dd0fec009f1cf524e750') in 0.039957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-Light.otf
+  artifactKey: Guid(ea114561ee1ad73409f8abbd3d9b6fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-Light.otf using Guid(ea114561ee1ad73409f8abbd3d9b6fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44d41c9578821ae7be6a3d3d2f81b33') in 0.025630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Props/extras/Programming/Lemon Milk Demo 3.png
+  artifactKey: Guid(a52f30dfdc0702f4d9b56d6755560afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Lemon Milk Demo 3.png using Guid(a52f30dfdc0702f4d9b56d6755560afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd73b527c5a07047d3f1f449d2b0cb4') in 0.018649 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
