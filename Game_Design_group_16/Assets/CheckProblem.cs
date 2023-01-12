@@ -22,6 +22,13 @@ public class CheckProblem : MonoBehaviour
     public TMP_InputField Level2Problem31;
     public TMP_InputField Level2Problem32;
     public TMP_InputField Level2Problem33;
+    public TMP_InputField Level3Problem11;
+    public TMP_InputField Level3Problem12;
+    public TMP_InputField Level3Problem13;
+    public TMP_InputField Level3Problem21;
+    public TMP_InputField Level3Problem22;
+    public TMP_InputField Level3Problem23;
+    public TMP_InputField Level3Problem31;
     public string solution1 = "String carName = Volvo;";
     public string solution2 = "boolean correct = true;";
     public string solution3 = "float pi = 3.14;";
@@ -31,13 +38,21 @@ public class CheckProblem : MonoBehaviour
     public string solution222 = "!=";   
     public string solution231 = "=="; 
     public string solution232 = "false"; 
+    public string solution311 = "for"; 
+    public string solution312 = "Yes"; 
+    public string solution313 = "i++"; 
+    public string solution322 = "100"; 
+    public string solution323 = "i"; 
+    public string solution331 = "for(int i = 10; i < 20; i++)"; 
     public Button Proceed1;
     public Button Proceed2;
+    public Button Proceed3;
 
     void Start()
     {
         Proceed1.interactable = false;
         Proceed2.interactable = false;
+        Proceed3.interactable = false;
     }
 
     private bool verifyL1Problem4(string str) {
@@ -77,6 +92,13 @@ public class CheckProblem : MonoBehaviour
         && Level2Problem33.text == solution232)
         {
             Proceed2.interactable = true;
+        }
+        if (Level3Problem11.text == solution311 && Level3Problem12.text == solution312 && 
+        Level3Problem13.text == solution313 && Level3Problem21.text == solution311 && 
+        Level3Problem22.text == solution322 && Level3Problem23.text == solution323 &&
+        Level3Problem31.text == solution331)
+        {
+            Proceed3.interactable = true;
         }
     }
 }
