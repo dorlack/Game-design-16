@@ -8,6 +8,12 @@ public class ChangeScene : MonoBehaviour
     public GameObject player;
     public GameObject MainPanel;
     public GameObject MainMenu;
+    public GameObject Tutorial1;
+    public GameObject Tutorial2;
+    public GameObject Tutorial3;
+    public GameObject Tutorial4;
+    public GameObject Tutorial5;
+    public GameObject VariablesHint;
     public GameObject Help1;
     public GameObject Help2;
     public GameObject Help3;
@@ -18,6 +24,9 @@ public class ChangeScene : MonoBehaviour
     public GameObject Level3;
     public GameObject Current;
 
+    // add unexpected sound
+    // add short animation.
+
     public void Start()
     {
         player.GetComponent<CameraSwitch>().enabled = false;
@@ -25,10 +34,63 @@ public class ChangeScene : MonoBehaviour
 
     public void ChangeScenes()
     {
-        if (Help1 != null) 
+        if (Tutorial1 != null) 
         {
             MainMenu.gameObject.SetActive(false);
-            Help1.gameObject.SetActive(true);
+            Tutorial1.gameObject.SetActive(true);
+        }
+    }
+
+    public void ChangeTutorial1()
+    {
+        if (Tutorial2 != null)
+        {
+            Tutorial1.gameObject.SetActive(false);
+            Tutorial2.gameObject.SetActive(true);
+        }
+    }
+
+    public void ChangeTutorial2()
+    {
+        if (Tutorial3 != null)
+        {
+            Tutorial2.gameObject.SetActive(false);
+            Tutorial3.gameObject.SetActive(true);
+        }
+    }
+    public void ChangeTutorial3()
+    {
+        if (Tutorial4 != null)
+        {
+            Tutorial3.gameObject.SetActive(false);
+            Tutorial4.gameObject.SetActive(true);
+        }
+    }
+    public void ChangeTutorial4()
+    {
+        if (Tutorial5 != null)
+        {
+            Tutorial4.gameObject.SetActive(false);
+            Tutorial5.gameObject.SetActive(true);
+        }
+    }
+    public void ChangeTutorial5()
+    {
+        if (VariablesHint != null)
+        {
+            Tutorial5.gameObject.SetActive(false);
+            VariablesHint.gameObject.SetActive(true);
+            // play unexpected sound
+            // play short animation of waring
+        }
+    }
+
+    public void ChangeVariablesHint()
+    {
+        if (Level1 != null)
+        {
+            VariablesHint.gameObject.SetActive(false);
+            Level1.gameObject.SetActive(true);
         }
     }
 
