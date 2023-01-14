@@ -11,12 +11,12 @@ public class EndAimationObserver : MonoBehaviour
     
     public void AlertObservers(string message)
     {
-        if (message.Equals("Screen out animation ended"))
+        if (message.Equals("Programming Screen out animation ended"))
         {
             player_cam.SetActive(true);
             zoom1.SetActive(false);
         }
-        if (message.Equals("Screen zoom animation ended"))
+        if (message.Equals("Programming Screen zoom animation ended"))
         {
                 Panel.gameObject.SetActive(true);
                 MainMenu.gameObject.SetActive(true);

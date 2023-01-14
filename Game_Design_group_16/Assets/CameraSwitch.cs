@@ -40,7 +40,7 @@ public class CameraSwitch : MonoBehaviour
                 zoom1.SetActive(true);
                 player_cam.SetActive(false);
                 //This line will get the Animator from  Parent of the door that was hit by the raycast.
-                zoom1.GetComponent<Animator>().Play("Screen zoom");
+                zoom1.GetComponent<Animator>().Play("Programming zoom");
                 //This will set the bool the opposite of what it is.
             }
         }
@@ -54,7 +54,7 @@ public class CameraSwitch : MonoBehaviour
         {
             if (screenhit.transform.tag == "Screen")
             {
-                zoom1.GetComponent<Animator>().Play("Screen out");
+                zoom1.GetComponent<Animator>().Play("Programming out");
                 player.GetComponent<PlayerMovement>().enabled = true;
             }
         }
