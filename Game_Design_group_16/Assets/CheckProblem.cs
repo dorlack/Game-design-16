@@ -87,7 +87,8 @@ public class CheckProblem : MonoBehaviour
             Proceed1.interactable = true;
         }
 
-        if (Level2Problem11.text == solution211 && Level2Problem12.text == solution212 && verifyL2Problem2() &&
+        if (Level2Problem11.text == solution211 && Level2Problem12.text == solution212 
+        && verifyL2Problem2() &&
         Level2Problem31.text == solution231 && Level2Problem32.text == solution231 
         && Level2Problem33.text == solution232)
         {
