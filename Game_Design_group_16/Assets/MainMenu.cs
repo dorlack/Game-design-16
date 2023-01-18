@@ -18,6 +18,8 @@ public class MainMenu : MonoBehaviour
     {
         player.GetComponent<CameraSwitch>().enabled = false;
         cs = MainPanel.GetComponent<ChangeScene>();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void OnEnable()

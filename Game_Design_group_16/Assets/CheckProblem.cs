@@ -63,6 +63,13 @@ public class CheckProblem : MonoBehaviour
             if (int.TryParse(number, out a) && str.Substring(str.Length-1)==";")
                 res = true;
         }
+
+        if (res)
+        {
+            Level1Problem4.selectionColor = Color.green;
+        } else
+            Level1Problem4.selectionColor = Color.red;
+
         return res;
     }
 
@@ -79,12 +86,27 @@ public class CheckProblem : MonoBehaviour
         return res;
     }
 
+    private bool checkProblem(TMP_InputField field, string solution)
+    {
+        if (field.text == solution)
+        {
+            field.selectionColor = Color.green;
+            return true;
+        }
+
+        field.selectionColor = Color.red;
+        return false;
+    }
+
     void Update()
     {
-        if (Level1Problem1.text == solution1 && Level1Problem2.text == solution2 &&
-         Level1Problem3.text == solution3 && verifyL1Problem4(Level1Problem4.text)) 
+        if (checkProblem(Level1Problem1,solution1) && checkProblem(Level1Problem2, solution2) 
+            && checkProblem(Level1Problem3, solution3) && verifyL1Problem4(Level1Problem4.text)) 
         {
             Proceed1.interactable = true;
+        } else
+        {
+            Proceed1.interactable = false;
         }
 
         if (Level2Problem11.text == solution211 && Level2Problem12.text == solution212 
