@@ -24,12 +24,57 @@ public class ChangeScene : MonoBehaviour
     public GameObject Level3;
     public GameObject Current;
 
+
+    private GameObject LastActive;
+
     // add unexpected sound
     // add short animation.
 
     public void Start()
     {
-        player.GetComponent<CameraSwitch>().enabled = false;
+        
+    }
+
+    public void Update()
+    {
+        ExitApplication();
+    }
+
+    private void ExitApplication()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            Debug.Log("Entered ExitApplication");
+            LastActive = findActiveScene();
+            LastActive.SetActive(false);
+            MainMenu.SetActive(true);
+        }
+    }
+
+    private GameObject findActiveScene()
+    {
+        Transform[] allChildren = MainPanel.GetComponentsInChildren<Transform>();
+        foreach (Transform child in allChildren)
+        {
+            if (child.gameObject != MainPanel && child.gameObject.activeSelf)
+            {
+                Debug.Log(child.gameObject.name);
+                return child.gameObject;
+            }
+        }
+        Debug.Log(null);
+        return null;
+    }
+
+    public bool LastActiveIsNull()
+    {
+        return LastActive == null;
+    }
+
+    public void ChangeToLastActive()
+    {
+        findActiveScene().SetActive(false);
+        LastActive.SetActive(true);
     }
 
     public void ChangeScenes()
@@ -141,7 +186,7 @@ public class ChangeScene : MonoBehaviour
 
     public void ChangeHelpCurrent1()
     {
-        if (Level1 != null) 
+        if (Help1 != null) 
         {
             Current.gameObject.SetActive(false);
             Help1.gameObject.SetActive(true);
@@ -193,13 +238,5 @@ public class ChangeScene : MonoBehaviour
             Level3.gameObject.SetActive(false);
             Level3.gameObject.SetActive(true);
         }
-    }
-
-    public void QuitApp()
-    {
-        Application.Quit();
-        MainPanel.gameObject.SetActive(false);
-        Cursor.visible = false; 
-        player.GetComponent<CameraSwitch>().enabled = true;
     }
 }
