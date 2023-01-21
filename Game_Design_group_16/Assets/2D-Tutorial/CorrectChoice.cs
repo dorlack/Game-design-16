@@ -12,7 +12,7 @@ public class CorrectChoice : MonoBehaviour
 
     public void ButtonPressed()
     {
-        screenSource.PlayOneShot(pleasantSound);
+        screenSource.PlayOneShot(pleasantSound, 0.5f);
 
         GameObject pressedButton = EventSystem.current.currentSelectedGameObject;
 

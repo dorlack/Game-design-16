@@ -102,10 +102,21 @@ public class CheckProblem : MonoBehaviour
         return false;
     }
 
+    private bool verifyLevel1()
+    {
+        int cnt = 0;
+
+        cnt += checkProblem(Level1Problem1, solution1)? 1 : 0;
+        cnt += checkProblem(Level1Problem2, solution2) ? 1 : 0;
+        cnt += checkProblem(Level1Problem3, solution3) ? 1 : 0;
+        cnt += verifyL1Problem4(Level1Problem4.text) ? 1 : 0;
+
+        return cnt == 4;
+    }
+
     void Update()
     {
-        if (checkProblem(Level1Problem1,solution1) && checkProblem(Level1Problem2, solution2) 
-            && checkProblem(Level1Problem3, solution3) && verifyL1Problem4(Level1Problem4.text)) 
+        if (verifyLevel1()) 
         {
             if (Proceed1.interactable == false)
             {
@@ -114,15 +125,6 @@ public class CheckProblem : MonoBehaviour
             }
             Proceed1.interactable = true;
         } 
-        else
-        {
-            if (Proceed1.interactable == true)
-            {
-                screenSource.PlayOneShot(unpleasantSound);
-                Debug.Log("Unpleasant Sound plated");
-            }
-            Proceed1.interactable = false;
-        }
 
         if (Level2Problem11.text == solution211 && Level2Problem12.text == solution212 
         && verifyL2Problem2() &&
@@ -136,14 +138,6 @@ public class CheckProblem : MonoBehaviour
             }
             Proceed2.interactable = true;
         }
-        else
-        {
-            if (Proceed2.interactable == true)
-            {
-                screenSource.PlayOneShot(unpleasantSound);
-            }
-            Proceed2.interactable = false;
-        }
 
         if (Level3Problem11.text == solution311 && Level3Problem12.text == solution312 && 
         Level3Problem13.text == solution313 && Level3Problem21.text == solution311 && 
@@ -156,14 +150,6 @@ public class CheckProblem : MonoBehaviour
                 Debug.Log("Pleasant Sound plated");
             }
             Proceed3.interactable = true;
-        }
-        else
-        {
-            if (Proceed3.interactable == true)
-            {
-                screenSource.PlayOneShot(unpleasantSound);
-            }
-            Proceed3.interactable = false;
         }
     }
 }
