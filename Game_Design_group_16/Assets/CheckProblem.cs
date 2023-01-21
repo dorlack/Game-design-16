@@ -48,6 +48,10 @@ public class CheckProblem : MonoBehaviour
     public Button Proceed2;
     public Button Proceed3;
 
+    public AudioSource screenSource;
+    public AudioClip unpleasantSound;
+    public AudioClip pleasantSound;
+
     void Start()
     {
         Proceed1.interactable = false;
@@ -103,9 +107,20 @@ public class CheckProblem : MonoBehaviour
         if (checkProblem(Level1Problem1,solution1) && checkProblem(Level1Problem2, solution2) 
             && checkProblem(Level1Problem3, solution3) && verifyL1Problem4(Level1Problem4.text)) 
         {
+            if (Proceed1.interactable == false)
+            {
+                screenSource.PlayOneShot(pleasantSound);
+                Debug.Log("Pleasant Sound plated");
+            }
             Proceed1.interactable = true;
-        } else
+        } 
+        else
         {
+            if (Proceed1.interactable == true)
+            {
+                screenSource.PlayOneShot(unpleasantSound);
+                Debug.Log("Unpleasant Sound plated");
+            }
             Proceed1.interactable = false;
         }
 
@@ -114,14 +129,41 @@ public class CheckProblem : MonoBehaviour
         Level2Problem31.text == solution231 && Level2Problem32.text == solution231 
         && Level2Problem33.text == solution232)
         {
+            if (Proceed1.interactable == false)
+            {
+                screenSource.PlayOneShot(pleasantSound);
+                Debug.Log("Pleasant Sound plated");
+            }
             Proceed2.interactable = true;
         }
+        else
+        {
+            if (Proceed2.interactable == true)
+            {
+                screenSource.PlayOneShot(unpleasantSound);
+            }
+            Proceed2.interactable = false;
+        }
+
         if (Level3Problem11.text == solution311 && Level3Problem12.text == solution312 && 
         Level3Problem13.text == solution313 && Level3Problem21.text == solution311 && 
         Level3Problem22.text == solution322 && Level3Problem23.text == solution323 &&
         Level3Problem31.text == solution331)
         {
+            if (Proceed1.interactable == false)
+            {
+                screenSource.PlayOneShot(pleasantSound);
+                Debug.Log("Pleasant Sound plated");
+            }
             Proceed3.interactable = true;
+        }
+        else
+        {
+            if (Proceed3.interactable == true)
+            {
+                screenSource.PlayOneShot(unpleasantSound);
+            }
+            Proceed3.interactable = false;
         }
     }
 }

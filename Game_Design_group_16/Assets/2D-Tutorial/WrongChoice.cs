@@ -5,12 +5,12 @@ using UnityEngine.EventSystems;
 
 public class WrongChoice : MonoBehaviour
 {
-    /// Add unpleasant audio
-    /// 
+    public AudioSource screenSource;
+    public AudioClip unpleasantSound;
 
     public void ButtonPressed()
     {
-        /// Play unpleasant audio
+        screenSource.PlayOneShot(unpleasantSound);
 
         string pressedButton = EventSystem.current.currentSelectedGameObject.name;
 

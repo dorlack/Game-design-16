@@ -7,11 +7,12 @@ using UnityEngine.EventSystems;
 
 public class CorrectChoice : MonoBehaviour
 {
-    // Add pleasant sound
+    public AudioSource screenSource;
+    public AudioClip pleasantSound;
 
     public void ButtonPressed()
     {
-        // Play pleasant sound
+        screenSource.PlayOneShot(pleasantSound);
 
         GameObject pressedButton = EventSystem.current.currentSelectedGameObject;
 
