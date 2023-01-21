@@ -15,7 +15,7 @@ C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53700
+58797
 Successfully changed project path to: C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
 C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/petar/Unity/Game-design-16/Game_Design_group_16
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 78.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 86.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,78 +63,78 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006662 seconds.
+Registered in 0.009841 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 83.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.619 seconds
+- Completed reload, in  0.731 seconds
 Domain Reload Profiling:
-	ReloadAssembly (619ms)
-		BeginReloadAssembly (62ms)
+	ReloadAssembly (731ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (455ms)
-			LoadAssemblies (60ms)
+		EndReloadAssembly (515ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (95ms)
+			SetupTypeCache (110ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (286ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (312ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (84ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (147ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005414 seconds.
+Registered in 0.007107 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\petar\Unity\Game-design-16\Game_Design_group_16\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\petar\Unity\Game-design-16\Game_Design_group_16\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.028 seconds
+- Completed reload, in  1.082 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1029ms)
+	ReloadAssembly (1083ms)
 		BeginReloadAssembly (103ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (815ms)
-			LoadAssemblies (74ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (858ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
+			SetupTypeCache (268ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (379ms)
+			SetupLoadedEditorAssemblies (383ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (247ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -142,13 +142,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3956 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 37 unused Assets / (1.3 MB). Loaded Objects now: 4426.
-Memory consumption went from 168.8 MB to 167.5 MB.
-Total: 3.107200 ms (FindLiveObjects: 0.292000 ms CreateObjectMapping: 0.242300 ms MarkObjects: 2.275500 ms  DeleteObjects: 0.296700 ms)
+Memory consumption went from 168.7 MB to 167.4 MB.
+Total: 3.283400 ms (FindLiveObjects: 0.343300 ms CreateObjectMapping: 0.278600 ms MarkObjects: 2.378600 ms  DeleteObjects: 0.282400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,3 +160,127 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 397602.168988 seconds.
+  path: Assets/Props/extras/Programming/Materials/EindhovenUniversity_ATLAS_ARTICLE_V1_Top_Page_1800x900.mat
+  artifactKey: Guid(f082f94fef1592c4dacd0d950b7c6438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Materials/EindhovenUniversity_ATLAS_ARTICLE_V1_Top_Page_1800x900.mat using Guid(f082f94fef1592c4dacd0d950b7c6438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2776d8c4e2cce4b4545e5db0a40a4e') in 0.149171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1039.862753 seconds.
+  path: Assets/Props/extras/Programming/Button box.png
+  artifactKey: Guid(51ea14237b4351941be72d82c7398d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Button box.png using Guid(51ea14237b4351941be72d82c7398d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b008ee338d0f1989b72262ea59c2412') in 0.083452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Props/extras/Programming/Example 3.png
+  artifactKey: Guid(094e170052482a44786654c903328a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Example 3.png using Guid(094e170052482a44786654c903328a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47a82a91c11f7de97a77f7a75c3e6c2') in 0.040861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/extras/Programming/Title help.png
+  artifactKey: Guid(6b6fc0096aea56341bfb5a4f233941c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Title help.png using Guid(6b6fc0096aea56341bfb5a4f233941c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6aaad2876e04beca599fd64d3fb6c4e') in 0.020005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Props/extras/Programming/Example 1.png
+  artifactKey: Guid(70c53df06c1510b47874da64def5cd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Example 1.png using Guid(70c53df06c1510b47874da64def5cd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b9594b61efcc2a2ca91f965c47d04b') in 0.022431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/extras/Programming/Screenshot 2023-01-11 193723.png
+  artifactKey: Guid(707c8e72aa55f914caba68b190c6a9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Screenshot 2023-01-11 193723.png using Guid(707c8e72aa55f914caba68b190c6a9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5afd70940520b643eb8cf2eb4433f35') in 0.015295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Props/extras/Programming/ui_buttons.png
+  artifactKey: Guid(595bb038e370fb5468a2841f027a1361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/ui_buttons.png using Guid(595bb038e370fb5468a2841f027a1361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0bc410375794313e352fac9c417f6c') in 0.050886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Props/extras/Programming/var.png
+  artifactKey: Guid(eaed5ec12a2cb7b4ba02490222d247f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/var.png using Guid(eaed5ec12a2cb7b4ba02490222d247f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb292b2e132965fdc78dfb9a8a5e5fc') in 0.020175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-Regular.otf
+  artifactKey: Guid(8f458c425ca9e05459fafaa1e5a309d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-Regular.otf using Guid(8f458c425ca9e05459fafaa1e5a309d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3e927c84f5526ddf7221e54bffe607') in 0.030824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Props/extras/Programming/Retro Gaming.ttf
+  artifactKey: Guid(98bc7d8f7a959d146a5a441c809a0a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Retro Gaming.ttf using Guid(98bc7d8f7a959d146a5a441c809a0a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb83d889052455e0f28f15ca57b76209') in 0.018931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-Medium.otf
+  artifactKey: Guid(42690fc813483fd478a7fc311051b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-Medium.otf using Guid(42690fc813483fd478a7fc311051b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ade39067e2217d8b70f7b0e7c9103bf') in 0.020702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Props/extras/Programming/Example 7.png
+  artifactKey: Guid(e63714fe774863a42a195725a8f485bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Example 7.png using Guid(e63714fe774863a42a195725a8f485bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df388fe34af66f5643ec93aad756815') in 0.030736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Props/extras/Programming/Example 4.png
+  artifactKey: Guid(be4d04ea4cc49f94686f9d0bcb457c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Example 4.png using Guid(be4d04ea4cc49f94686f9d0bcb457c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '069d702dc7e85d47307499419844e28a') in 0.033171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Props/extras/Programming/LEMONMILK-Bold.otf
+  artifactKey: Guid(c4a88b8a60eecf94997e2bec9175f944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/LEMONMILK-Bold.otf using Guid(c4a88b8a60eecf94997e2bec9175f944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d085de0c76ab658fac56c3184eff8f') in 0.020544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Props/extras/Programming/title.png
+  artifactKey: Guid(6f1580866f5e5dc4f895dc9c34848b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/title.png using Guid(6f1580866f5e5dc4f895dc9c34848b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9d1a53d8a12c5712f5836db8afe694') in 0.023908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Props/extras/Programming/Example 5.png
+  artifactKey: Guid(8faf374c38ab4ca4ba50b0d52751f309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Example 5.png using Guid(8faf374c38ab4ca4ba50b0d52751f309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8bf65a0c677dbc37254082cd23f5f4') in 0.025905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Props/extras/Programming/Desktop_programming.mat
+  artifactKey: Guid(40336288bca218048b3b0523f591b8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Desktop_programming.mat using Guid(40336288bca218048b3b0523f591b8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffe1120f73b53fff1440798107ac990') in 0.017259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Props/extras/Programming/Screenshot 2023-01-09 180804.png
+  artifactKey: Guid(03555b113ff0e8f4995e409f569e37c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Screenshot 2023-01-09 180804.png using Guid(03555b113ff0e8f4995e409f569e37c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186a41157ee6206616bdb2cc263a9779') in 0.018925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Props/extras/Programming/Retro Gaming SDF.asset
+  artifactKey: Guid(6ec6adeab1e7fd647bd8bb2f157df677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Retro Gaming SDF.asset using Guid(6ec6adeab1e7fd647bd8bb2f157df677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64052bf010a78b0f61cd4e3c0c36ecad') in 0.046987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Props/extras/Programming/Example 6.png
+  artifactKey: Guid(52bcc9e8fca4e8848ac6388ebd6dad17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Props/extras/Programming/Example 6.png using Guid(52bcc9e8fca4e8848ac6388ebd6dad17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbedb04b6f5ee2166bdab18fe3a17c95') in 0.018461 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 88003947a71859e499e60ec9f17cc11b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - StrawberryCheesecake
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 057ef803f2f76f14f9552f1fa0df66b1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
