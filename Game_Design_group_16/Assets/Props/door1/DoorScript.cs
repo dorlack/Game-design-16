@@ -8,7 +8,6 @@ public class DoorScript : MonoBehaviour
     [Header("MaxDistance you can open or close the door.")]
     public float MaxDistance = 10;
  
-    private bool opened = false;
     private  Animator anim;
  
  
