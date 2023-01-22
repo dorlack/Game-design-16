@@ -20,6 +20,7 @@ public class EndAimationObserver : MonoBehaviour
         {
                 Panel.gameObject.SetActive(true);
                 MainMenu.gameObject.SetActive(true);
+                Debug.Log(message);
         }
     }
 }
