@@ -6,6 +6,7 @@ using UnityEngine;
 public class ChangeScene : MonoBehaviour
 {
     public GameObject player;
+    public GameObject NPCappear;
     public GameObject MainPanel;
     public GameObject MainMenu;
     public GameObject Tutorial1;
@@ -32,7 +33,7 @@ public class ChangeScene : MonoBehaviour
 
     public void Start()
     {
-        
+        NPCappear.SetActive(false);
     }
 
     public void Update()
@@ -226,6 +227,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (Level3 != null) 
         {
+            NPCappear.SetActive(true);
             Level2.gameObject.SetActive(false);
             Level3.gameObject.SetActive(true);
         }
@@ -236,7 +238,8 @@ public class ChangeScene : MonoBehaviour
         if (Level3 != null) 
         {
             Level3.gameObject.SetActive(false);
-            Level3.gameObject.SetActive(true);
+            MainMenu.gameObject.SetActive(true);
+            LastActive = Level3;
         }
     }
 }
