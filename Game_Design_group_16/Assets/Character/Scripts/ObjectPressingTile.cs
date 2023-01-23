@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class ObjectPressingTile : MonoBehaviour
 {
+    [SerializeField] private bool isGatePlaceholder = false;
+    [SerializeField] private List<string> gateType;
+
     [SerializeField] public bool allowStateChange = true;
+
+    [SerializeField] private bool doorTile = false;
+    [SerializeField] public Animator myDoor = null;
+    [SerializeField] public string doorOpen = "DoorOpen";
+    [SerializeField] public string doorClose = "DoorClose";
+
     [SerializeField] private bool revertsToNegative = false;
     [SerializeField] private bool initialStateTrue = false;
     private Material tileMaterial;
@@ -18,7 +27,17 @@ public class ObjectPressingTile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) {
 
-        if (allowStateChange) {
+        if (allowStateChange && isGatePlaceholder) {
+            if (gateType.Contains(collision.gameObject.tag )) {
+                changeState(true);
+                //play good sound
+            }
+            else {
+                //play bad sound
+            }
+        }
+
+        if (allowStateChange && !isGatePlaceholder) {
             changeState(true);
         }
     }
@@ -27,6 +46,22 @@ public class ObjectPressingTile : MonoBehaviour
        
         if (allowStateChange && revertsToNegative) {
             changeState(false);
+        }
+
+        if (doorTile) {
+            myDoor.Play(doorClose, 0, 0.0f);
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision){
+        if (doorTile) {
+            myDoor.Play(doorOpen, 0, 0.0f);
+        }
+    }
+
+    private void OnTriggerExit(Collider collision){
+        if (doorTile) {
+            myDoor.Play(doorClose, 0, 0.0f);
         }
     }
 
@@ -40,4 +75,5 @@ public class ObjectPressingTile : MonoBehaviour
     public bool getState() {
         return currentState;
     }
+
 }
