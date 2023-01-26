@@ -4941,6 +4941,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1384003218, guid: e7123def985ced741aa3c430b2785ac7, type: 3}
+      propertyPath: pickUpDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6756072361956918392, guid: e7123def985ced741aa3c430b2785ac7, type: 3}
       propertyPath: m_Name
       value: First Person Player

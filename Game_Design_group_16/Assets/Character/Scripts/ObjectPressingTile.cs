@@ -40,6 +40,10 @@ public class ObjectPressingTile : MonoBehaviour
         if (allowStateChange && !isGatePlaceholder) {
             changeState(true);
         }
+
+        if (doorTile) {
+            myDoor.Play(doorOpen, 0, 0.0f);
+        }
     }
 
     private void OnCollisionExit(Collision collision) {
@@ -48,18 +52,6 @@ public class ObjectPressingTile : MonoBehaviour
             changeState(false);
         }
 
-        if (doorTile) {
-            myDoor.Play(doorClose, 0, 0.0f);
-        }
-    }
-
-    private void OnTriggerEnter(Collider collision){
-        if (doorTile) {
-            myDoor.Play(doorOpen, 0, 0.0f);
-        }
-    }
-
-    private void OnTriggerExit(Collider collision){
         if (doorTile) {
             myDoor.Play(doorClose, 0, 0.0f);
         }
