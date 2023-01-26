@@ -16,7 +16,7 @@ public class Dialogs : MonoBehaviour
     [Header("MaxDistance you can open or close the door.")]
     public float MaxDistance = 15;
 
-    private bool inDialigue = false;
+    private bool inDialogue = false;
 
     int size, index;
     Message[] messages;
@@ -46,7 +46,7 @@ public class Dialogs : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (!inDialigue)
+            if (!inDialogue)
             {
                 Pressed();
             }
@@ -59,7 +59,7 @@ public class Dialogs : MonoBehaviour
                     Time.timeScale = 1.0f;
                     dialogBox.SetActive(false);
                     manager.enabled = false;
-                    inDialigue = false;
+                    inDialogue = false;
                 }
                 else
                 {
@@ -86,28 +86,41 @@ public class Dialogs : MonoBehaviour
 
                 manager = NPC.transform.gameObject.GetComponent<DialogManager>();
 
-                if (manager.isFinished)
-                {
-                    return;
-                }
-                    
-                Time.timeScale = 0.0f;  // freeze the game
-
-                character.enabled = false;
-                messages = manager.messages;
-                actors = manager.actors;
-
-                size = messages.Length;
-                index = 0;
-
-                dialogText.text = messages[index].message;
-
-                dialogActor.text = actors[messages[index].actorId].name;
-                dialogBox.SetActive(true);
-                inDialigue = true;
-                manager.isFinished = true;
+                openDialogue();
 
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        manager = other.transform.gameObject.GetComponent<DialogManager>();
+
+        Destroy(other);
+        openDialogue();
+    }
+
+    private void openDialogue()
+    {
+        if (manager.isFinished)
+        {
+            return;
+        }
+
+        Time.timeScale = 0.0f;  // freeze the game
+
+        character.enabled = false;
+        messages = manager.messages;
+        actors = manager.actors;
+
+        size = messages.Length;
+        index = 0;
+
+        dialogText.text = messages[index].message;
+
+        dialogActor.text = actors[messages[index].actorId].name;
+        dialogBox.SetActive(true);
+        inDialogue = true;
+        manager.isFinished = true;
     }
 }
