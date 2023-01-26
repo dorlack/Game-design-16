@@ -21,7 +21,7 @@ public class CameraSwitch : MonoBehaviour
             {
                 Pressed();
             } else {
-                Escape();
+                //Escape();
             }
         }
     }
