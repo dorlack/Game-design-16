@@ -9,6 +9,9 @@ TagManager:
   - Light
   - Laptop
   - NPC
+  - AndGate
+  - OrGate
+  - XorGate
   layers:
   - Default
   - TransparentFX
