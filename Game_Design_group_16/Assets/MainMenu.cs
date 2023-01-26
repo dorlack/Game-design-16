@@ -43,7 +43,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitApp()
     {
-        Application.Quit();
         MainPanel.gameObject.SetActive(false);
         Cursor.visible = false;
 
